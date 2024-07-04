@@ -3,14 +3,13 @@
     font-size: 40px;
 }
 
-.style {
-  
-}
+
+
 
 
 :root {
 --main-color: #071e2e;
---secondary-color: #03adea;
+--secondary-color: #e86602;
 
 }
 
@@ -34,6 +33,7 @@ body {
 
 .active {
     color: var(--secondary-color);
+   
   }
   header ul {
     font-family: "Poppins";
