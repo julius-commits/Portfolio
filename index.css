@@ -1,97 +1,130 @@
 body {
-    background-color: var(--main-color);
-    font-family: "Poppins";
-  }
-  
-  
-  :root {
-    --main-color: #071e2e;
-    --secondary-color: #e86602;
-  }
-  
-  header {
-    font-family: Poopins;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Poppins";
-    padding: 32px 142px;
-  }
-  .logo-img {
-    color: white;
-    font-size: 40px;
-  }
-  .active {
-    color: var(--secondary-color);
-  }
-  header ul {
-    font-family: "Poppins";
-    color: white;
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    font-size: 18px;
-  }
+  background-color: var(--main-color);
+  font-family: "Poppins";
+}
 
-  .content {
-   display: flex;
-   flex-direction: row;
-   padding: 32px 142px;
-    border: 2px solid transparent;
+label {
+  display: block;
+  width: 80px;
+  height: 30px;
+  padding: 5px;
+  box-shadow: inset 0px 5px 10px rgb(111, 110, 110);
+  position: relative;
+  border-radius: 20px;
+  background-color: gray;
+}
 
-  }
+.label img {
+  position: absolute;
+  z-index: 9999;
+  width: 20px;
+}
 
-  .content-title {
-font-size: 64px;
-font-weight: 600;
-color: white;
-font-family: "Poppins";
+.label::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #e86602;
+  z-index: 1;
+}
+.moon {
+  left: 50px;
+}
+#mode {
+  visibility: hidden;
+}
 
-  }
+#mode:checked + label {
+  background-color: #e86602;
+}
 
-  .content-role {
-color: var(--secondary-color);
-font-size: 24px;
-font-weight: 600;
+#mode:checked + label::after {
+  left: 45px;
+  background-color: gray;
+}
 
+:root {
+  --main-color: #071e2e;
+  --secondary-color: #e86602;
+}
+
+header {
+  font-family: Poopins;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins";
+  padding: 32px 142px;
+}
+.logo-img {
+  color: white;
+  font-size: 40px;
+}
+.active {
+  color: var(--secondary-color);
+}
+header ul {
+  font-family: "Poppins";
+  color: white;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 32px 142px;
+  border: 2px solid transparent;
+}
+
+.content-title {
+  font-size: 64px;
+  font-weight: 600;
+  color: white;
+  font-family: "Poppins";
+}
+
+.content-role {
+  color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .content-doc {
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
-    font-family: "Poppins"; 
-    line-height: 28px;
-
-
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  font-family: "Poppins";
+  line-height: 28px;
 }
 
-.main-btn{
-background-color: var(--secondary-color);
-color: var(--main-color);
-border:1px solid var(--secondary-color)
+.main-btn {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border: 1px solid var(--secondary-color);
 }
 
 .second-btn {
-background-color: var(--main-color);
-color: var(--secondary-color);
-border: 1px solid var(--secondary-color); 
-
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
-
-.btn{
-border-radius: 28px;
-font-size: 18px;
-padding: 17px;
-
+.btn {
+  border-radius: 28px;
+  font-size: 18px;
+  padding: 17px;
 }
-.user-img{
-  
-    width: 900px;
+.user-img {
+  width: 900px;
 }
- 
 
 @media only screen and (max-width: 600px) {
   .content {
@@ -99,26 +132,23 @@ padding: 17px;
   }
 }
 
-
-  .footer-text {
-    
-color: var(--secondary-color);
-font-style: 18px;
-font-family: "Poppins";
- }
-
-.footer-icons {
-list-style: none;
-display: flex;
-flex-direction: row;
-gap: 10px;
-border: 2px solid transparent;
+.footer-text {
+  color: var(--secondary-color);
+  font-style: 18px;
+  font-family: "Poppins";
 }
 
+.footer-icons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 2px solid transparent;
+}
 
-footer{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
