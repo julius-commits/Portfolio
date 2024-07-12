@@ -4,14 +4,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     
-    <link href="./index.css" rel="stylesheet" type="text/css" />
+    <link href="./form.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
         <div class="logo-img">.Julius</div>
         <ul class="style">
           <li> <a class="active"  href="./index.html" style="text-decoration: none;" >Home</a> </li>
-          <li> <a class="active"  href="" style="text-decoration: none;" >About</a> </li>
+          <li> <a class="active"  href="experience.html" style="text-decoration: none;" >About</a> </li>
           <li> <a class="active"  href="./myworks.html" style="text-decoration: none;" >Work</a> </li>
           <li> <a class="active"  href="./form.html" style="text-decoration: none;" >Contact</a> </li>
         </ul>
@@ -19,27 +19,34 @@
     <section class="content">
         <section class="content-work">
           <p class="content-title">Have a project? Contact me ✋</p>
-    <div>
     
-      
-
-    
-    
-    </form>
-     </div>
-       
-       
-        </section>
-
-
-
-         
-        
-        
-        
-        
-        
-       
-          
+          <div class="container">
+            <form class="contact-form">
+                <h2></h2>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        <footer>
+          <p class="footer-text">Find me</p>
+          <ul class="footer-icons">
+            <li><img src="twitter.png" /></li>
+            <li><img src="facebook.png" /></li>
+            <li><img src="Group (1).png" /></li>
+            <li><img src="Group (2).png" /></li>
+          </li>
+          </ul>
+      </footer>
 </body>
 </html>

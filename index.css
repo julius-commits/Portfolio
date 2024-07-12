@@ -34,6 +34,7 @@ label {
 .moon {
   left: 50px;
 }
+
 #mode {
   visibility: hidden;
 }
@@ -64,6 +65,7 @@ header {
 .logo-img {
   color: white;
   font-size: 40px;
+  position: relative;
 }
 .active {
   color: var(--secondary-color);
