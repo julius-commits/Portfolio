@@ -91,10 +91,6 @@ body {
   color: #fff;
 }
 
-header {
-  /* Add styles for your header here */
-}
-
 .content {
   display: flex;
   justify-content: center;
